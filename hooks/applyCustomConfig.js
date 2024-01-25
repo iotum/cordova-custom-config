@@ -1053,7 +1053,7 @@ var applyCustomConfig = (function(){
                     updateIosPch(targetFilePath, configItems);
                 }else if (targetName.indexOf("asset_catalog") > -1) {
                     targetName =  targetName.split('.')[1];
-                    var targetDirPath = path.join(platformPath, projectName, "Images.xcassets", targetName+".imageset");
+                    var targetDirPath = path.join(platformPath, projectName, "Assets.xcassets", targetName+".imageset");
                     deployAssetCatalog(targetName, targetDirPath, configItems);
                 }
 
